@@ -1,0 +1,8 @@
+%Ej 04
+syms c x y;
+y1=2*x - 3*c*y;
+y2=c*x+2*y;
+z=[y1==5,y2==7];
+[z1, z2]= solve(z);
+s1=subs(z1,[c],[1]);
+s2=subs(z2,[c],[1]);
